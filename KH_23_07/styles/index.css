@@ -1,0 +1,285 @@
+@font-face {
+    font-family: "Aeroport_regular";
+    src: url("../assets-copy/fonts/Aeroport-regular.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Aeroport_bold";
+    src: url("../assets-copy/fonts/Aeroport-bold.woff") format("woff");
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Khabensky";
+    src: url("../assets-copy/fonts/Khabensky.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+@media(max-width: 913px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        background-color: rgba(118, 63, 151, 1);
+    }
+
+    .column1,
+    .column2 {
+        width: 100vw;
+    }
+
+    .title {
+        color: white;
+        font-family: "Khabensky", sans-serif;
+        font-size: 1.8em;
+        padding-top: 1.5em;
+        padding-left: 0.5em;
+    }
+
+    .subtitle {
+        color: white;
+        font-family: "Aeroport_regular", sans-serif;
+        font-size: 1.7em;
+        padding-top: 1em;
+        padding-left: 0.5em
+    }
+
+    .img {
+        width: 80vw;
+        padding-top: 5vw;
+    }
+
+    .bottom-block {
+        padding-top: 1em;
+        padding-left: 2em;
+        padding-bottom: 2em;
+        display: flex;
+        flex-direction: row;
+    }
+
+
+    .logo-img {
+        width: 30vw;
+
+    }
+
+    .to-help {
+        margin-left: 30vw;
+    }
+
+    .button-help {
+        width: 15vw;
+        height: 3vh;
+        border-radius: 0.5vw;
+        border: none;
+        font-family: "Aeroport_regular", sans-serif;
+        font-size: 3vw;
+        color: rgba(118, 63, 151, 1);
+        -webkit-transition: all 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
+        transition: all 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
+    }
+
+    .button-help:hover {
+        -webkit-transform: translate(10px);
+        transform: translate(10px);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5)
+    }
+
+    .myslide1 {
+        width: 80vw;
+    }
+}
+
+@media (min-width: 914px) and (max-width: 1981px) {
+    .container {
+        display: flex;
+        flex-direction: row;
+        background-color: rgba(118, 63, 151, 1);
+    }
+
+    .column1 {
+        width: 60vw;
+    }
+
+    .column2 {
+        width: 40vw;
+    }
+
+    .title {
+        color: white;
+        font-family: "Khabensky", sans-serif;
+        font-size: 2.8em;
+        padding-top: 1.5em;
+        padding-left: 1em;
+        -webkit-transition: all 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
+        transition: all 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
+    }
+
+    .title:hover {
+        -webkit-transform: translate(10px);
+        transform: translate(10px);
+    }
+
+    .subtitle {
+        color: white;
+        font-family: "Aeroport_regular", sans-serif;
+        font-size: 2em;
+        padding-top: 1em;
+        padding-left: 1.5em;
+        -webkit-transition: all 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
+        transition: all 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
+    }
+
+    .subtitle:hover {
+        -webkit-transform: translate(10px);
+        transform: translate(10px); 
+    }
+    .img {
+        width: 50vw;
+        padding-top: 2vw;
+    }
+
+    .bottom-block {
+        display: flex;
+        flex-direction: row;
+        position: absolute;
+        padding-top: 85vh;
+        padding-left: 2em;
+    }
+
+    .logo-img {
+        width: 20vw;
+        -webkit-transition: all 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
+        transition: all 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
+    }
+
+    .logo-img:hover {
+        -webkit-transform: translate(10px);
+        transform: translate(10px); 
+    }
+    .to-help {
+        padding-top: 1em;
+        position: absolute;
+        padding-left: 44vw;
+    }
+
+    .button-help {
+        width: 10vw;
+        height: 3vw;
+        border-radius: 0.5vw;
+        border: none;
+        font-family: "Aeroport_regular", sans-serif;
+        font-size: 1.8vw;
+        color: rgba(118, 63, 151, 1);
+        -webkit-transition: all 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
+        transition: all 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
+    }
+
+    .button-help:hover {
+        -webkit-transform: translate(10px);
+        transform: translate(10px);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5)
+    }
+
+    .myslide1 {
+        width: 50vw;
+    }
+}
+
+
+
+.column1,
+.column2 {
+    display: flex;
+    flex-direction: column;
+}
+
+.adress,
+.happy,
+.medical,
+.know,
+.fundrise,
+.commun {
+    font-family: "Aeroport_regular", sans-serif;
+    font-size: 1.5em;
+    font-weight: 700;
+    color: white;
+    text-align: left;
+    padding-top: calc(8.7vh - 0.75em);
+    padding-bottom: calc(8.7vh - 0.75em);
+    padding-left: 1em;
+    padding-right: 1em;
+    -webkit-transition: all 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
+        transition: all 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.adr {
+    background-color: #5FBF87;
+}
+.hap {
+    background-color: #F16722;
+}
+.med {
+    background-color: rgba(235, 38, 39, 1);
+}
+.kno {
+    background-color: rgba(62, 149, 209, 1);
+}
+.fu {
+    background-color: #D04F9C;
+}
+.com {
+    background-color: rgba(131, 72, 167, 1);
+}
+
+.adress:hover,
+.happy:hover,
+.medical:hover,
+.know:hover,
+.fundrise:hover,
+.commun:hover {
+    -webkit-transform: translate(10px);
+    transform: translate(10px);
+}
+
+a {
+    text-decoration: none;
+    display: block;
+}
+
+.adress {
+    background-color: #5FBF87;
+}
+
+.happy {
+    background-color: #F16722;
+}
+
+.medical {
+    background-color: rgba(235, 38, 39, 1);
+}
+
+.know {
+    background-color: rgba(62, 149, 209, 1);
+}
+
+.fundrise {
+    background-color: #D04F9C;
+}
+
+.commun {
+    background-color: rgba(131, 72, 167, 1);
+}
+
+
+.title-first {
+    -webkit-transition: all 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition: all 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
+}

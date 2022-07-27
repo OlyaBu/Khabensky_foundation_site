@@ -1,0 +1,398 @@
+@font-face {
+    font-family: "Aeroport_regular";
+    src: url("../assets-copy/fonts/Aeroport-regular.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "Aeroport_bold";
+    src: url("../assets-copy/fonts/Aeroport-bold.woff") format("woff");
+    font-weight:bold;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "Aeroport_light";
+    src: url("../assets-copy/fonts/Aeroport-light.woff") format("woff");
+    font-weight: light;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "Khabensky";
+    src: url("../assets-copy/fonts/Khabensky.woff") format("woff");
+    font-weight: light;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+
+.body {
+    font-family: "Aeroport", sans-serif;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+
+.title {
+    display: flex;
+   /* flex-wrap: wrap;*/
+    flex-direction: row;
+    justify-content: baseline;
+    
+}
+
+.arrow {
+    margin: 3vw 0 0 5vw;
+    /*margin-top: 3%;
+    margin-right: 1%;*/
+}
+
+@media(max-width: 913px) {
+    h3 {
+        font-family: "Aeroport_bold", sans-serif;
+        font-size: 2em;
+        font-weight: 900;
+        color: rgba(235, 38, 39, 1);
+        margin-top: 2vw;
+        margin-left: 5vw;
+        width: auto;
+    }
+}
+
+@media screen and (min-width: 914px) and (max-width: 1981px) {
+    h3 {
+        font-family: "Aeroport_bold", sans-serif;
+        font-size: 2.4em;
+        font-weight: 900;
+        color: rgba(235, 38, 39, 1);
+        margin-top: 2vw;
+        margin-left: 5vw;
+        width: auto;
+    }
+}
+
+
+
+/*здесь стили блока intro:*/
+
+.about_intro {
+    display: flex;  
+    font-size: 1.6rem;
+    font-style: white;
+    font-weight: 200;
+    background: rgba(235, 38, 39, 1);
+    padding: 3vw 0 3vw 7vw;
+}
+
+
+
+.about_discription {
+    padding: 2vh 3% 2vh 3%;
+    height: auto;
+    font-family: "Aeroport_light", sans-serif;
+    font-weight: 200;
+    font-size: 1.6rem;
+    color: white;
+    font-weight: 300;
+    background: rgba(235, 38, 39, 1);
+    border-left: 2px solid white;
+}
+
+/*здесь начинаются стили блока about:*/
+
+.about-block {
+    display: flex;
+    flex-direction: column;
+    padding: 3vw 1vw 3vw 7vw;
+}
+
+.about_text {
+    padding: 0 3% 0 3%;
+    font-family: "Aeroport_regular", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.9rem;
+    height: fit-content;
+    border-left: 2px solid black;
+}
+
+.about_point {
+
+    font-family: "Aeroport_light", sans-serif;
+    font-style: light;
+    font-weight: 300;
+    font-size: 1rem;
+    padding: 0 3% 0 0;
+}
+
+
+
+@media(max-width: 913px) {
+    .block_with_picture {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        
+    }
+}
+
+@media screen and (min-width: 914px) and (max-width: 1981px) {
+    .block_with_picture {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin-top: 1.5vw;
+    }
+}
+
+
+li {
+    margin-bottom: 13px;
+}
+
+/*здесь стили для блока с цифрами:*/
+@media(max-width: 1079px) {
+    .numbers {
+        font-family: "Khabensky", sans-serif;
+         font-size: 2.7rem ;
+     }
+}
+
+@media screen and (min-width: 1080px) and (max-width: 1981px) {
+    .numbers {
+        font-family: "Khabensky", sans-serif;
+         font-size: 3rem;
+     }
+}
+
+
+.numbers_regular {
+    font-family: "Aeroport_regular", sans-serif; 
+}
+
+.main_point_one {
+    font-family: 'Aeroport', sans-serif;
+    line-height: 1.5rem;
+    border: 1px solid black;
+    padding: auto;
+    display: flex;
+    flex-direction: column;
+    background:  rgba(235, 38, 39, 0.2);
+}
+
+.main_point_two {
+    font-family: 'Aeroport', sans-serif;
+    line-height: 1.5rem;
+    border: 1px solid black;
+    padding: auto;
+    display: flex;
+    flex-direction: column;
+    background: rgba(235, 38, 39, 0.2);
+}
+
+.main_point_three {
+    font-family: 'Aeroport', sans-serif;
+    line-height: 1.5rem;
+    border: 1px solid black;
+    padding: auto;
+    display: flex;
+    flex-direction: column;
+    background: rgba(235, 38, 39, 0.2);
+}
+
+@media screen and  (max-width: 913px) { 
+    .main_point {
+        display: flex;
+        flex-direction: column;
+    }
+
+    
+}
+
+
+
+@media screen and (min-width: 914px) and (max-width: 1981px) {
+    .main_point {
+        display: flex;
+        flex-direction: row;
+    }
+
+.main_point_one {
+    width: 33vw;
+}
+
+.main_point_two {
+    width: 33vw;
+}
+
+.main_point_three {
+    width: 33vw;
+}
+}
+
+
+
+/*здесь стили для аккордеонов:*/
+
+.discription_accordion {
+    display: flex;
+    padding: 7vw 0 3vw 7vw;
+}
+
+.name_accordion {
+    font-size: 2.8rem;
+    font-weight: 600;
+    color:  rgba(235, 38, 39, 1);
+    font-family: "Aeroport_bold", sans-serif; 
+    border-left: 2px solid  rgba(235, 38, 39, 1);
+    padding: 0 3% 0 3%;
+}
+
+.accordion_total {
+    display: flex;
+    padding: 5%;
+    flex-direction: column;
+    background-color:  rgba(235, 38, 39, 0.4);
+}
+
+.accordion {
+    color: black;
+    cursor: pointer;
+    padding: 18px;
+    border-bottom: 1px solid black;
+    text-align: left;
+    outline: none;
+    font-family: "Aeroport_regular", sans-serif;
+    font-size: 2.2rem;
+    transition: 0.4s;
+}
+
+.active,
+.accordion:hover {
+    background-color: none;
+}
+
+.accordion:after {
+    content:url(../assets-copy/down.svg.svg);
+        font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after {
+    content:url(../assets-copy/up.svg);
+}
+
+.panel {
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    font-size: 1.3rem;
+    line-height: 2rem;
+    font-family: "Aeroport_light", sans-serif;
+}
+
+/*тут аккордеон но белый*/
+.panel_white {
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    font-size: 1.3rem;
+    line-height: 2rem;
+    font-family: "Aeroport_light", sans-serif;
+    background: white;
+}
+.accordion_total_white {
+    display: flex;
+    padding: 5%;
+    flex-direction: column;
+    background-color: white;
+}
+
+
+
+.active,
+.accordion_white:hover {
+    background-color: none;
+
+}
+
+.accordion_white:after {
+    content:url(../assets-copy/arrow_acc_red_down.svg);
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+.active_white::after{
+content:url(../assets-copy/arrow_acc_red_up.svg);
+}
+
+@media screen and  (max-width: 913px) { 
+    .accordion {
+        color: black;
+        cursor: pointer;
+        padding: 18px;
+        border-bottom: 1px solid black;
+        text-align: left;
+        outline: none;
+        font-family: "Aeroport_regular", sans-serif;
+        font-size: 1.5rem;
+        transition: 0.4s;
+    }
+
+    .accordion_white {
+        color:  rgba(235, 38, 39, 1);
+        cursor: pointer;
+        padding: 18px;
+        border-bottom: 1px solid rgba(235, 38, 39, 1);
+        text-align: left;
+        outline: none;
+        font-family: "Aeroport_bold", sans-serif; 
+        font-size: 1.9rem;
+        transition: 0.4s;
+    }
+}
+
+
+
+@media screen and (min-width: 914px) and (max-width: 1981px) {
+    .accordion {
+        color: black;
+        cursor: pointer;
+        padding: 18px;
+        border-bottom: 1px solid black;
+        text-align: left;
+        outline: none;
+        font-family: "Aeroport_regular", sans-serif;
+        font-size: 2.2rem;
+        transition: 0.4s;
+    }
+
+    .accordion_white {
+        color:  rgba(235, 38, 39, 1);
+        cursor: pointer;
+        padding: 18px;
+        border-bottom: 1px solid rgba(235, 38, 39, 1);
+        text-align: left;
+        outline: none;
+        font-family: "Aeroport_bold", sans-serif; 
+        font-size: 2.8rem;
+        transition: 0.4s;
+    }
+}
+
+.arrow-up {
+    display: flex;
+    justify-content: end;
+    padding-top: 3vw;
+}
+.medical-bold {
+    font-weight: bold;
+}

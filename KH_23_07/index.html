@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="styles/index.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="shortcut icon" href="assets-copy/BFKH_brain.png" type="image/png">
+
+    <title>Годовой отчет Фонда Константина Хабенского</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="column1">
+            <div style="z-index: 1;">
+                <a href="fund.html">
+                    <div class="title">БЛАГОТВОРИТЕЛЬНЫЙ ФОНД КОНСТАНТИНА ХАБЕНСКОГО</div>
+                </a>
+            </div>
+            <div style="z-index: 1;">
+            <a href="report.html">
+            <div class="subtitle">Годовой отчёт — 2021 ›</div></a>
+            </div>
+            <div class="slider">
+                <div class="myslide">
+                    <img src="assets-copy/neuro_0.png" alt="neuro_start" class="myslide1">
+                </div>
+                <div class="myslide">
+                    <img src="assets-copy/neuro_1.png" alt="neuro_middle" class="myslide1">
+                </div>
+                <div class="myslide">
+                    <img src="assets-copy/neuro_3.png" alt="neuro_final" class="myslide1">
+                </div>
+            </div>
+            <div class="bottom-block">
+
+                <div style="z-index: 1;">
+                    <a href="https://bfkh.ru/">
+                        <div class="logo"><img src="assets-copy/logo.png" alt="" class="logo-img"></div>
+                    </a>
+                </div>
+
+
+
+                <div class="to-help">
+                    <form action=" https://bfkh.ru/donation/report/" target="_blank">
+                        <button class="button-help">Помочь</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="column2">
+            <a href="adress_help.html">
+                <div class="adress">АДРЕСНАЯ ПОМОЩЬ</div>
+            </a>
+            <a href="happy.html">
+                <div class="happy">ТЕРАПИЯ СЧАСТЬЯ</div>
+            </a>
+            <a href="medical_help.html">
+                <div class="medical">ПОМОЩЬ МЕДИЦИНСКИМ И СОЦИАЛЬНЫМ УЧРЕЖДЕНИЯМ</div>
+            </a>
+            <a href="knowhow.html">
+                <div class="know">ЗНАТЬ И НЕ БОЯТЬСЯ</div>
+            </a>
+            <a href="fundraising.html">
+                <div class="fundrise">ФАНДРАЙЗИНГ</div>
+            </a>
+            <a href="commun.html">
+                <div class="commun">КОММУНИКАЦИИ</div>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        function showSlides(n) {
+            let slides = document.getElementsByClassName("myslide1");
+            if (n > slides.length) {
+                slideIndex = 1;
+            }
+            for (let slide of slides) {
+                slide.style.display = "none";
+            }
+            slides[slideIndex - 1].style.display = "flex";
+        }
+
+        let timer = setInterval(function () {
+            if (slideIndex === 3) return
+            else {
+                slideIndex++;
+                showSlides(slideIndex);
+            }
+        }, 2000);
+    </script>
+</body>
+
+</html>
